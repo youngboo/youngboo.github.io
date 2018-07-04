@@ -20,12 +20,32 @@
     .main {
         height: 200px;
         background: #fcc;
+        overflow: hidden;
     }
 </style>
 <body>
-<div class="aside"></div>
-<div class="main">
-    作品链接：<a href="dist/index.html">豆瓣小程序</a>
+<div class="aside">
+
 </div>
+<div class="main">
+    作品链接：<a href="douban/index.html">豆瓣小程序(手机版)</a>
+
+</div>
+<script>
+    function test(){
+      var n = 4399
+      function add(){
+        n++
+        console.log(n)
+      }
+      return {n:n,add:add}
+    }
+    var result = test()
+    result2 = test()
+    result.add()
+    result.add()
+    console.log(result.n)
+    result2.add()
+</script>
 </body>
 </html>
