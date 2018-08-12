@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="grid.css"/>
+    <style>
+       .parent{
+           width:100px;
+           height:100px;
+           display:table;
+           background: #a28351;
+       }
+        .child{
+            display:table-cell;
+            vertical-align: middle;
+            text-align:center;
+        }
+       .parent2{
+           width:100px;
+           height:100px;
+           display:flex;
+           align-items: center;
+           background: #a28351;
+       }
+       .child2{
+           flex:1 0 auto;
+           justify-content: center;
+           text-align:center
+       }
+       .parent3{
+           width: 100%;
+           height: 100px;
+           top:500px;
+           position:absolute;
+       }
+       .center{
+           top: 50%;
+           left: 50%;
+           width:50%;
+           height:30%;
+           padding:20px;
+           text-align:center;
+           background:#393;
+           color:#fff;
+           transform: translate(-50%, -50%);
+           position:absolute;
+       }
+        .container{
+            display: grid;
+            align-items:center;
+            background: #a28351;
+        }
+       .Demo {
+           width: 100%;
+           padding: .8em 1em 0;
+           background: hsla(31,15%,50%,.1);
+           border-radius: 3px;
+           
+       }
+       .u-textCenter {
+           text-align: center!important;
+       }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            我是儿子
+        </div>
+    </div>
+    <h1>----------------------------</h1>
+    <div class="parent2">
+        <div class="child2">
+            我是儿子2
+        </div>
+    </div>
+    <div class="parent3">
+        <div class="center">您可以尝试改变浏览器大小，这个元素依然是水平垂直居中的哦！</div>
+    </div>
+    <div class="Grid Grid--gutters u-textCenter">
+        <div class="Grid-cell">
+            <div class="Demo">
+                1/3
+            </div>
+        </div>
+        <div class="Grid-cell">
+            <div class="Demo">
+                1/3
+            </div>
+        </div>
+        <div class="Grid-cell">
+            <div class="Demo">
+                1/3
+            </div>
+        </div>
+    </div>
+<script>
+    function Person(){
+      this.name = 10;
+      this.getName  = function(){
+        return this.name;
+      }
+    }
+    Person.prototype.getAge = function () {
+      return this.age;
+    }
+</script>
+</body>
+</html>

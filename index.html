@@ -1,51 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <title>my pages</title>
+    <link rel="stylesheet" href="main.css"/>
 </head>
-<style>
-    body {
-        width: 300px;
-        position: relative;
-    }
-
-    .aside {
-        width: 100px;
-        height: 150px;
-        float: left;
-        background: #f66;
-    }
-
-    .main {
-        height: 200px;
-        background: #fcc;
-        overflow: hidden;
-    }
-</style>
 <body>
-<div class="aside">
 
-</div>
 <div class="main">
-    作品链接：<a href="douban/index.html">豆瓣小程序(手机版)</a>
+<aside class="aside">
+    <menu>
+        目录
+    </menu>
+</aside>
+    <main>
+        <h1>网站</h1>
+        <p>
+            这是网站正文
+        </p>
+    </main>
 
+<aside>
+    推荐内容
+</aside>
 </div>
-<script>
-    function test(){
-      var n = 4399
-      function add(){
-        n++
-        console.log(n)
-      }
-      return {n:n,add:add}
-    }
-    var result = test()
-    result2 = test()
-    result.add()
-    result.add()
-    console.log(result.n)
-    result2.add()
-</script>
 </body>
 </html>
