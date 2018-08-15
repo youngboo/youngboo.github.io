@@ -4,25 +4,56 @@
     <meta charset="UTF-8">
     <title>my pages</title>
     <link rel="stylesheet" href="main.css"/>
+    <style>
+        .HolyGrail {
+            display:flex;
+            min-height: 100vh;
+            height: 100%;
+            flex-direction: column;
+        }
+        .HolyGrail-header,
+        HolyGrail-footer {
+            flex:none;
+        }
+        .HolyGrail-body {
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: row;
+        }
+        .HolyGrail-content {
+            flex:1;
+        }
+        .HolyGrail-nav, .HolyGrail-ads {
+            flex: 0 0 12em;
+        }
+        .HolyGrail-nav {
+            order: -1;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .header-h1{
+            flex:1;
+        }
+    </style>
 </head>
-<body>
-
-<div class="main">
-<aside class="aside">
-    <menu>
-        目录
-    </menu>
-</aside>
-    <main>
-        <h1>网站</h1>
-        <p>
-            这是网站正文
-        </p>
+<body class="HolyGrail">
+<header>
+    <h1 class="header-h1">个人小站</h1>
+</header>
+<div class="HolyGrail-body">
+    <main class="HolyGrail-content">
+        <h3>作品列表</h3>
+        <ul>
+            <a href="douban/index.html"><li>口袋豆瓣</li></a>
+            <li>飞机大战</li>
+        </ul>
     </main>
-
-<aside>
-    推荐内容
-</aside>
+    <nav class="HolyGrail-nav"></nav>
+    <aside class="HolyGrail-ads"></aside>
 </div>
+<footer>footer</footer>
 </body>
 </html>
